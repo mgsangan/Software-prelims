@@ -8,6 +8,9 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <style>
+    body {
+            background-color: #b2b3b4;
+        }
     
     .navbar{
         margin-bottom: 1rem;
@@ -15,32 +18,43 @@
     .carousel-item{
         max-height: 400px;
     }   
+    .jumbotron {
+            background-color: rgb(63, 62, 62); /* Replace with your school image */
+            background-size: cover;
+            color: white;
+            text-shadow: 2px 2px 4px #000000;
+        }
+        .contact-form {
+            margin-top: 50px;
+        }
 </style>
 </head>
 <body>
-    <div class="m-4">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-                <a href="prelims.html" class="navbar-brand">BSCpE</a>
-                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav">
-                        <a href="prelims.html" class="nav-item nav-link active">Home</a>
-                        <a href="about.html" class="nav-item nav-link">SCpES</a>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">More</a>
-                            <div class="dropdown-menu">
-                                <a href="about.html" class="dropdown-item">About</a>
-                                <a href="mission.html" class="dropdown-item">Mission</a>
-                                <a href="vission.html" class="dropdown-item">Vission</a>
+    <div class="jumbotron text-center">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(63, 62, 62);">
+                <div class="container-fluid">
+                    <a href="prelims.html" class="navbar-brand">BSCpE</a>
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav">
+                            <a href="prelims.html" class="nav-item nav-link active">Home</a>
+                            <a href="about.html" class="nav-item nav-link">SCpES</a>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">More</a>
+                                <div class="dropdown-menu">
+                                    <a href="about.html" class="dropdown-item">About</a>
+                                    <a href="mission.html" class="dropdown-item">Mission</a>
+                                    <a href="vission.html" class="dropdown-item">Vission</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
     </div>
 
     <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -71,6 +85,10 @@
         <a class="carousel-control-next" href="#myCarousel" data-bs-slide="next">
             <span class="carousel-control-next-icon"></span>
         </a>
+    </div>
+    <div class="jumbotron text-center">
+        <h1 class="display-4">Welcome to Computer Engineering</h1>
+        <p class="lead">Empowering the Future through Education</p>
     </div>
     
     <section class="pt-md-5">
@@ -124,10 +142,31 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-
         </div>
     </section>
+
+    <div class="container">
+        <div class="row contact-form">
+            <div class="col-md-4">
+                <h2>Contact Us</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
-</html>
+</html>                                                                                                                                                                                                                                                                                                                                                                                                                                                              
